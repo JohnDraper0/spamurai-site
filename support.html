@@ -1,0 +1,126 @@
+<!doctype html>
+<html lang="en-AU">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Support: Spamurai</title>
+<meta name="description" content="Help for Spamurai: setup, blocking a number or a batch, undo, backup and contact.">
+<meta name="color-scheme" content="light dark">
+<link rel="icon" href="icon.png">
+<style>
+:root{
+  --ink:#111426; --ink2:#262248; --red:#E23642; --paper:#F6F2E9; --gold:#DEB25C;
+  --bg:var(--paper); --text:#1b1d33; --muted:#555874; --card:#fff; --line:#e3dccb; --accent:#c42632; --hero-text:#F6F2E9;
+}
+@media (prefers-color-scheme:dark){
+  :root{--bg:#0d0f1e; --text:#ece8dd; --muted:#a9abc2; --card:#181a30; --line:#2c2f4d; --accent:#ff5a66;}
+}
+*{box-sizing:border-box}
+html{-webkit-text-size-adjust:100%}
+body{margin:0;background:var(--bg);color:var(--text);font:17px/1.6 -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif}
+.wrap{max-width:760px;margin:0 auto;padding:0 20px}
+h1,h2,h3{line-height:1.2;margin:0 0 .5em;letter-spacing:-.01em}
+h2{font-size:1.4rem;margin-top:1.8em}
+p,ul,ol{margin:0 0 1em}
+li{margin-bottom:.4em}
+a{color:var(--accent)}
+.hero{background:linear-gradient(160deg,var(--ink),var(--ink2));color:var(--hero-text);padding:36px 0 40px;border-bottom:4px solid var(--red)}
+.hero a.back{color:var(--gold);font-weight:700;letter-spacing:.12em;text-transform:uppercase;font-size:.8rem;text-decoration:none}
+.hero h1{font-size:clamp(1.8rem,5vw,2.6rem);margin:.4em 0 0}
+main{padding:24px 0 40px}
+.card{background:var(--card);border:1px solid var(--line);border-radius:16px;padding:18px 22px;margin:0 0 1em}
+.card p:last-child,.card ul:last-child{margin-bottom:0}
+.muted{color:var(--muted)}
+code{background:var(--card);border:1px solid var(--line);border-radius:6px;padding:1px 6px;font-size:.92em}
+footer{padding:36px 0 48px;color:var(--muted);font-size:.9rem;border-top:1px solid var(--line)}
+footer a{margin-right:14px}
+</style>
+</head>
+<body>
+<header class="hero">
+  <div class="wrap">
+    <a class="back" href="index.html">&larr; Spamurai</a>
+    <h1>Support</h1>
+  </div>
+</header>
+<main>
+<div class="wrap">
+<p>Spamurai is a private call blocker for iPhone. This page covers setup and the questions people ask most. Everything stays on your phone, so there is no account to manage.</p>
+
+<h2>Set it up (about a minute)</h2>
+<div class="card">
+<ol>
+  <li>Open Spamurai.</li>
+  <li>Go to <strong>Settings &gt; Apps &gt; Phone &gt; Call Blocking &amp; Identification</strong>.</li>
+  <li>Switch <strong>Spamurai</strong> on.</li>
+</ol>
+<p>iOS (the iPhone's operating system) keeps call blockers off until you allow them. Until you do, the app shows a red banner with a <strong>Turn it on</strong> button that opens that screen.</p>
+</div>
+
+<h2>Block a number</h2>
+<div class="card">
+<ol>
+  <li>A spam call comes in. In <strong>Phone &gt; Recents</strong>, tap the (i) next to the call.</li>
+  <li>Hold the number and choose <strong>Copy</strong>.</li>
+  <li>Open Spamurai and tap <strong>Paste</strong>, or tap <strong>+</strong> then <strong>Add number</strong> and paste it.</li>
+  <li>Save. Blocking is live within a few seconds.</li>
+</ol>
+<p>For a faster way, use the <strong>Block a Number</strong> action in the Shortcuts app. You can put it on your Home Screen or Action Button.</p>
+</div>
+
+<h2>Block a whole batch</h2>
+<div class="card">
+<p>Spam callers often cycle through neighbouring numbers. A "batch" is a run of those neighbours.</p>
+<ol>
+  <li>Add the number as above.</li>
+  <li>Under <strong>Also catch</strong>, choose how many of its last digits to cover (1 to 6).</li>
+  <li>Check the count shown before you save. For example, the last 2 digits covers 100 numbers.</li>
+</ol>
+<p>You can also swipe left on a blocked number in the list and tap <strong>Widen</strong>. Spamurai may also suggest a batch when several of your blocked numbers look like one run.</p>
+<p class="muted">A batch can include numbers that belong to real people. If a contact falls inside a blocked batch, add them to the <strong>Never block</strong> list.</p>
+</div>
+
+<h2>Undo or change a block</h2>
+<div class="card">
+<ul>
+  <li>Right after you block a number, tap <strong>Undo</strong> on the confirmation.</li>
+  <li>Later, swipe left on the number in the list and tap <strong>Delete</strong>.</li>
+  <li>Not sure about a number? Swipe and choose <strong>Label instead</strong>. It will ring, but show "Likely spam" or your own words.</li>
+  <li>Want a built-in list off? Switch it off under <strong>Built-in protection</strong>. The two older reported-scam lists start switched off.</li>
+</ul>
+</div>
+
+<h2>Why does a blocked call still show in Recents?</h2>
+<p>That is how iOS works. A blocked call does not ring, but iOS still logs it in <strong>Phone &gt; Recents</strong>, marked <strong>Blocked</strong>. Nothing is hidden from you. Spamurai does not control the call log and cannot remove those entries.</p>
+
+<h2>Back up and restore</h2>
+<div class="card">
+<ol>
+  <li>In the app, tap <strong>Back up list</strong>. The share sheet opens with your list as text.</li>
+  <li>Send it somewhere you can find it later, such as Notes or Files.</li>
+  <li>On a new phone, copy that text, open Spamurai and tap <strong>Paste a list</strong>. Paste it in. It accepts a Spamurai backup as well as plain numbers.</li>
+</ol>
+<p>This is shared or pasted text. It is not an automatic sync between devices.</p>
+</div>
+
+<h2>What Spamurai cannot do</h2>
+<ul>
+  <li>It does not stop every scam call. It blocks the numbers you give it, plus a built-in list of fake numbers.</li>
+  <li>It cannot read your call log. You copy numbers from Recents.</li>
+  <li>It cannot block "No Caller ID" calls. Use <strong>Silence Unknown Callers</strong> in iOS.</li>
+  <li>The lookalike guard labels calls ("Possible spoof"). It does not block them.</li>
+</ul>
+
+<h2>Contact</h2>
+<p>Questions or problems: vanguardforge@mail.grokbot.com. Please do not send phone numbers you do not want to share. You do not need to include your block list to get help.</p>
+<p>Privacy: see the <a href="privacy.html">privacy policy</a>.</p>
+</div>
+</main>
+<footer>
+  <div class="wrap">
+    <p><a href="index.html">Home</a><a href="privacy.html">Privacy policy</a><a href="support.html">Support</a></p>
+    <p>iPhone and Siri are trademarks of Apple Inc.</p>
+  </div>
+</footer>
+</body>
+</html>
